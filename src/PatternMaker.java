@@ -6,7 +6,7 @@ public class PatternMaker {
     public PatternMaker() {
         //System.out.println("Hi, Pattern Maker!");
 
-        pattern11();
+        pattern9();
     }
 
     public void pattern1() {
@@ -61,20 +61,33 @@ public class PatternMaker {
     public void pattern7() {
         for (int x=6; x>0; x--) {
             for (int y=1; y<x; y++) {
-                System.out.print(y + " ");
+                System.out.print(7-x + " ");
             }
           System.out.println();
         }
     }
 
     public void pattern8() {
-        //don't know how to make it go the other way
         for (int a = 5; a > 0; a--) {
-            for (int b = 0; b < a; b++) {
+            for(int c=0; c<5-a; c++) {
                 System.out.print(" ");
+            }
+            for (int b = 0; b < a; b++) {
                 System.out.print("*");
             }
-            System.out.println(" ");
+            System.out.println();
+        }
+    }
+
+    public void pattern9() {
+        for (int a = 4; a > -1; a--) {
+            for(int c=1; c<8-a; c++) {
+                System.out.print(" ");
+            }
+            for (int b = 1; b < a+3; b++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 
